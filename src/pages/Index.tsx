@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RecipeForm } from "@/components/RecipeForm";
 import { RecipeDisplay } from "@/components/RecipeDisplay";
+import { AuthButton } from "@/components/AuthButton";
 import { generateRecipe } from "@/utils/recipeGenerator";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Utensils } from "lucide-react";
@@ -43,7 +44,7 @@ const Index = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-accent/5">
         <div className="container mx-auto px-4 py-8">
-          <div className="mb-6">
+          <div className="flex justify-between items-center mb-6">
             <Button
               onClick={handleStartOver}
               variant="outline"
@@ -52,6 +53,7 @@ const Index = () => {
               <ArrowLeft className="h-4 w-4" />
               Generate Another Recipe
             </Button>
+            <AuthButton />
           </div>
           <RecipeDisplay recipe={recipe} />
         </div>
@@ -70,6 +72,9 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/70 to-background/90" />
         
         <div className="relative container mx-auto px-4 py-16">
+          <div className="flex justify-end mb-6">
+            <AuthButton />
+          </div>
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Utensils className="h-12 w-12 text-primary" />
