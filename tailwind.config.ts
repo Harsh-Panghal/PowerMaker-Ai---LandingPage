@@ -60,10 +60,11 @@ export default {
 					DEFAULT: 'hsl(var(--warning))',
 					foreground: 'hsl(var(--warning-foreground))'
 				},
-				food: {
-					primary: 'hsl(var(--food-primary))',
-					secondary: 'hsl(var(--food-secondary))',
-					accent: 'hsl(var(--food-accent))'
+				neu: {
+					primary: 'hsl(var(--neu-primary))',
+					secondary: 'hsl(var(--neu-secondary))',
+					accent: 'hsl(var(--neu-accent))',
+					'accent-hover': 'hsl(var(--neu-accent-hover))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -79,7 +80,14 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				xl: '12px',
+				'2xl': '16px'
+			},
+			boxShadow: {
+				'neu-raised': 'var(--shadow-neu-raised)',
+				'neu-inset': 'var(--shadow-neu-inset)',
+				'neu-flat': 'var(--shadow-neu-flat)'
 			},
 			keyframes: {
 				'accordion-down': {
