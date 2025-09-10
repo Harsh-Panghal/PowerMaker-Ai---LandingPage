@@ -38,7 +38,7 @@ export const RecipeForm = ({ onSubmit, isLoading = false }: RecipeFormProps) => 
         <div className="flex items-center justify-center gap-2 mb-2">
           <ChefHat className="h-8 w-8 text-primary" />
           <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-food-primary bg-clip-text text-transparent">
-            Recipe Generator
+            Recipe
           </CardTitle>
         </div>
         <p className="text-muted-foreground text-lg">
